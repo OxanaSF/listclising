@@ -154,7 +154,7 @@ def replace_head(input_list):
 
     """
     input_list[0]=42
-    pass
+    
 
 
 def replace_third_and_last(input_list):
@@ -168,11 +168,11 @@ def replace_third_and_last(input_list):
     True
 
     """
-    input_list[2] = 37
-    input_list[-1] = 37
+    input_list[2] = input_list[-1]  = 37
+    #input_list[-1] = 37
 
 
-    pass
+    
 
 
 def replace_middle(input_list):
@@ -205,8 +205,20 @@ def delete_third_and_seventh(input_list):
     True
 
     """
+
+    # deleting the 3rd & 7th indexes
     del input_list[2:7:4]
-    pass
+    
+    # slicing sections and concatenating together
+    # Sl1 = input_list[0:2]
+    # Sl2 = input_list[3:6]
+    # Sl3 = input_list[-1:]
+    # input_list = Sl1 + Sl2 + Sl3
+    # input_list
+
+    # use pop
+    # input_list.pop(2)
+    # input_list.pop(6)
 
 
 def delete_middle(input_list):
@@ -222,6 +234,9 @@ def delete_middle(input_list):
     True
 
     """
+
+    del input_list[2:-2]
+
 
     pass
 
